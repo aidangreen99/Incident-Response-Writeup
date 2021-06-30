@@ -37,12 +37,12 @@ Incident Response
 
 ​
 
-##Preventative Actions To Be Taken By Users
+## Preventative Actions To Be Taken By Users
 
 * Keep personal resources up to date. IS will keep COB resources up to date, but to protect the integrity of the network personal devices should also be up to date. 
 * Know the warning signs of spam emails. If you doubt the authenticity of an email, forward it to IS so they can verify it. 
 
-##Incident Risk Situations 
+## Incident Risk Situations 
 Incident risk situations are actions or events that put a system at risk of being compromised. After any system experiences a risk situation, IS should be contacted immediately and given all relevant information, such as originating country, links clicked, files downloaded, or information stolen. Incident risk situations include various circumstances, such as:  
 
 * Clicking a malicious email link. 
@@ -50,9 +50,9 @@ Incident risk situations are actions or events that put a system at risk of bein
 * Connecting to unsecured Wi-Fi networks.  
 * Physical compromise (e.g. stolen laptop or phone, or unauthorized access).  
 * Giving account passwords away via social engineering or phishing. 
-* In certain countries deemed cybersecurity risks, leaving systems unattended, even in personal rooms. 
+* In certain countries deemed cybersecurity risks[1], leaving systems unattended, even in personal rooms. 
 
-Countries that should be considered security risks can be found at the following URL under the Level 4 category: https://travel.state.gov/content/travel/en/traveladvisories/traveladvisories.html/ 
+[1]: "Countries that should be considered security risks can be found at the following URL under the Level 4 category: https://travel.state.gov/content/travel/en/traveladvisories/traveladvisories.html/"
 
  
 
