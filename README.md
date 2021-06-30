@@ -39,7 +39,7 @@ Incident Response
 
 ## Preventative Actions To Be Taken By Users
 
-* Keep personal resources up to date. IS will keep COB resources up to date, but to protect the integrity of the network personal devices should also be up to date. 
+* Keep personal resources up to date. IS will keep organizational resources up to date, but to protect the integrity of the network personal devices should also be up to date. 
 * Know the warning signs of spam emails. If you doubt the authenticity of an email, forward it to IS so they can verify it. 
 
 ## Incident Risk Situations 
@@ -56,137 +56,63 @@ Incident risk situations are actions or events that put a system at risk of bein
 
  
 
-Incident Actions To Be Taken By Users 
+## Incident Actions To Be Taken By Users 
+* Disconnect the computer from the network if possible.  
+* Contact COB IS with as much detail as possible. Include actions that may have resulted in infection, services or network resources accessed, accounts used, and    relevant contact information.
+* Change passwords. Any account you accessed through the compromised system is at risk.
+* Monitor accounts for suspicious activity. If emails are being sent through your account or files are being modified, report it to IS immediately.
+* Notify other users of service interruption. If you share the resource with other users, explain that the computer is not to be used or affected in any way, including power cycles or logins.
+* Wait for further instructions from COB IS. If another IS entity contacts you, verify the action with COB IS to ensure all departments are in the loop. 
 
-    Disconnect the computer from the network if possible.  
+## Procedures for IS Agents 
+* Disconnect the computer from the network if possible. Shutting the computer down or rebuilding the computer could destroy vital evidence, so the best way to achieve immediate containment is simply removal from the network. If the computer is connected by ethernet, remove the ethernet. If it is connected wirelessly, disconnect the Wi-Fi or disable the wireless adapter.
+* Gather as much info from the user as possible. Inquire about sites they may have visited, files they may have downloaded, what they clicked on, and what occurred. <u>DO NOT RECREATE THE USER’S STEPS.</u>
+* Create an isolated environment for the computer. Keep the computer disconnected from all networks and services.
+* Download latest Windows Defender definitions via a known clean USB. The latest definitions can be found here: https://www.microsoft.com/en-us/wdsi/defenderupdates 
+* Run Windows Defender on the infected computer. Follow instructions given to clean the computer.
+* Install Malwarebytes with latest definitions via USB. 
+* Run a Malwarebytes scan. If issues are found, attempt to resolve them per Malwarebytes’ instructions.  
+* Backup necessary data once computer is clean. Work with the user to ensure their vital documents are backed up. Do not simply copy over the user’s entire profile as that may proliferate the spread of the malware.  
+* Reimage, if necessary. 
 
- 
+## NIST Standards For Incident Response 
 
-    Contact COB IS with as much detail as possible. Include actions that may have resulted in infection, services or network resources accessed, accounts used, and relevant contact information.  
+### Phase 0: Preparation 
 
- 
-
-    Change passwords. Any account you accessed through the compromised system is at risk. 
-
- 
-
-    Monitor accounts for suspicious activity. If emails are being sent through your account or files are being modified, report it to IS immediately. 
-
- 
-
-    Notify other users of service interruption. If you share the resource with other users, explain that the computer is not to be used or affected in any way, including power cycles or logins.  
-
- 
-
-    Wait for further instructions from COB IS. If another IS entity contacts you, verify the action with COB IS to ensure all departments are in the loop. 
-
-Procedures for IS Agents 
-
-    Disconnect the computer from the network if possible. Shutting the computer down or rebuilding the computer could destroy vital evidence, so the best way to achieve immediate containment is simply removal from the network. If the computer is connected by ethernet, remove the ethernet. If it is connected wirelessly, disconnect the Wi-Fi or disable the wireless adapter. 
-
- 
-
-    Gather as much info from the user as possible. Inquire about sites they may have visited, files they may have downloaded, what they clicked on, and what occurred. DO NOT RECREATE THE USER’S STEPS. 
-
- 
-
-    Create isolated environment for the computer. Keep the computer disconnected from all networks and services. 
-
- 
-
-    Download latest Windows Defender definitions via a known clean USB. The latest definitions can be found here: https://www.microsoft.com/en-us/wdsi/defenderupdates 
-
- 
-
-    Run Windows Defender on the infected computer. Follow instructions given to clean the computer. 
-
- 
-
-    Install Malwarebytes with latest definitions via USB. 
-
- 
-
-    Run a Malwarebytes scan. If issues are found, attempt to resolve them per Malwarebytes’ instructions.  
-
- 
-
-    Backup necessary data once computer is clean. Work with the user to ensure their vital documents are backed up. Do not simply copy over the user’s entire profile as that may proliferate the spread of the malware.  
-
- 
-
-    Reimage, if necessary. 
-
-NIST Standards For Incident Response 
-
-Phase 0: Preparation 
-
-0.1	Security Controls 
+#### 0.1	Security Controls 
 
 Proper security controls can mitigate the risk of a compromised system by disallowing the spread of the infection, as well as preventing the initial infection. For the sake of this procedure, properly implemented controls will be assumed.  
 
-0.2	Channels of Communication 
+#### 0.2	Channels of Communication 
 
 Communication is very important as it allows a rapid response to an incident. All employees are encouraged to keep multiple channels open (i.e. cell phone, email, or encrypted messaging). During an incident response, or IR, delegated employees may be required to keep multiple channels open.  
 
-0.3 	Gather Relevant Information 
+#### 0.3 	Gather Relevant Information 
 
 To assist with 0.2 Channels of Communication it is vital that all information directly and indirectly relevant to the incident be gathered and accessible. The NIST Computer Security Incident Handling Guide (Cihonski, et al. 2012) lists the following as relevant resources and facilities: 
-
-    Contact Information for team members and others within and outside the organization, such as law enforcement and other incident response teams. Information may include phone numbers, email addresses, public encryption keys, and contact identity verification processes.  
-
- 
-
-    Incident reporting mechanisms such as phone numbers, email addresses, online forms, and secure instant messaging systems that users can use to report suspected incidents. To encourage reporting, at least one method should permit users to report anonymously.  
-
- 
-
-    War room if necessary, to allow for centralized dissemination of relevant information to whichever IR team member needs it, as well as real time creation of a customized IR plan. 
+* Contact Information for team members and others within and outside the organization, such as law enforcement and other incident response teams. Information may include phone numbers, email addresses, public encryption keys, and contact identity verification processes.  
+* Incident reporting mechanisms such as phone numbers, email addresses, online forms, and secure instant messaging systems that users can use to report suspected incidents. To encourage reporting, at least one method should permit users to report anonymously.  
+* War room if necessary, to allow for centralized dissemination of relevant information to whichever IR team member needs it, as well as real time creation of a customized IR plan. 
+* Secure storage for securing evidence and other sensitive materials. 
+* Encryption software to be used for communications among team members.  
 
  
 
-    Secure storage for securing evidence and other sensitive materials. 
+#### 0.4	IR Analysis Hardware and Software 
+Proper hardware and software play a huge role in the IR as well as in other stages of the control process. NIST SP.800-61 (Cihonski, et al. 2012) lists the following as hardware and software for an IR: 
+* Digital forensic workstations for creating disk images, preserving log files, and saving any other relevant data.
+* Laptops for activities that benefit from a degree of freedom, such as analyzing data, sniffing packets, and writing reports.
+* Spare workstations, servers, and networking equipment, or the virtual equivalent for various purposes including restoring backups and testing malware.
+* Blank removable media for transportation of data. 
+* Portable printer for printing logs from non-networked resources.
+* Removable media containing trusted versions of software for gathering evidence from systems. 
+* Evidence gathering accessories such as hard-bound notebooks, digital cameras, audio recorders, and evidence storage bags and tags to preserve evidence for possible legal action. 
 
  
 
-    Encryption software to be used for communications among team members.  
+### Phase 1: Detection and Analysis 
 
- 
-
-0.4	IR Analysis Hardware and Software 
-
- 	Proper hardware and software play a huge role in the IR as well as in other stages of the control process. NIST SP.800-61 (Cihonski, et al. 2012) lists the following as hardware and software for an IR: 
-
-    Digital forensic workstations for creating disk images, preserving log files, and saving any other relevant data. 
-
- 
-
-    Laptops for activities that benefit from a degree of freedom, such as analyzing data, sniffing packets, and writing reports. 
-
- 
-
-    Spare workstations, servers, and networking equipment, or the virtual equivalent for various purposes including restoring backups and testing malware. 
-
- 
-
-    Blank removable media for transportation of data. 
-
- 
-
-    Portable printer for printing logs from non-networked resources. 
-
- 
-
-    Removable media containing trusted versions of software for gathering evidence from systems. 
-
- 
-
-    Evidence gathering accessories such as hard-bound notebooks, digital cameras, audio recorders, and evidence storage bags and tags to preserve evidence for possible legal action. 
-
- 
-
-Phase 1: Detection and Analysis 
-
-1.1	Attack Vectors 
+#### 1.1	Attack Vectors 
 
 Incidents can occur in many ways, so organizations should be generally prepared to handle any incident, but should focus on the most commonly known attack vectors. From NISP SP.800-61 Section 3.2.1 (Cihonski, et al. 2012), a list of common methods of attack: 
 
@@ -274,7 +200,7 @@ After an incident has been adequately contained, eradication may be necessary to
 
 During recovery, administrators restore systems to their normal operation, confirm their normal function, and remediate discovered vulnerabilities. Recovery can include many actions, such as restoring systems from clean backups, replacing compromised files, patching, and tightening network perimeter safety. Heightened system logging and/or network monitoring are often included, as once a resource is successfully attacked, it will often be attacked again.  
 
-References 
+## References 
 
 Cihonski, Paul, Tom Millar, Tim Grance, and Karen Scarfone. 2012. Computer Security Incident Handling Guide Special Publicaation 800-61 Rev. 2. National Institute of Standards and Technology. 
 
