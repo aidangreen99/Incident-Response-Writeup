@@ -22,7 +22,7 @@ Incident risk situations are actions or events that put a system at risk of bein
 * Giving account passwords away via social engineering or phishing. 
 * In certain countries deemed cybersecurity risks<sup>[1]</sup>, leaving systems unattended, even in personal rooms. 
 
-[1]:https://travel.state.gov/content/travel/en/traveladvisories/traveladvisories.html/ "Countries that should be considered security risks can be found at the linked URL under the Level 4 category."
+[1]:https://travel.state.gov/content/travel/en/traveladvisories/traveladvisories.html/ "Countries that should be considered security risks can be found under the Level 4 category."
 
  
 
@@ -86,29 +86,26 @@ Proper hardware and software play a huge role in the IR as well as in other stag
 
 Incidents can occur in many ways, so organizations should be generally prepared to handle any incident, but should focus on the most commonly known attack vectors. From NISP SP.800-61 Section 3.2.1 (Cihonski, et al. 2012), a list of common methods of attack: 
 
-External/Removable Media: An attack executed from removable media or a peripheral device—for example, malicious code spreading onto a system from an infected USB flash drive.  
+* External/Removable Media: An attack executed from removable media or a peripheral device—for example, malicious code spreading onto a system from an infected USB flash drive.  
 
-Attrition: An attack that employs brute force methods to compromise, degrade, or destroy systems, networks, or services (e.g., a DDoS intended to impair or deny access to a service or application; a brute force attack against an authentication mechanism, such as passwords, CAPTCHAS, or digital signatures).  
+* Attrition: An attack that employs brute force methods to compromise, degrade, or destroy systems, networks, or services (e.g., a DDoS intended to impair or deny access to a service or application; a brute force attack against an authentication mechanism, such as passwords, CAPTCHAS, or digital signatures).  
 
-Web: An attack executed from a website or web-based application—for example, a cross-site scripting attack used to steal credentials or a redirect to a site that exploits a browser vulnerability and installs malware.  
+* Web: An attack executed from a website or web-based application—for example, a cross-site scripting attack used to steal credentials or a redirect to a site that exploits a browser vulnerability and installs malware.  
 
-Email: An attack executed via an email message or attachment—for example, exploit code disguised as an attached document or a link to a malicious website in the body of an email message. 
+* Email: An attack executed via an email message or attachment—for example, exploit code disguised as an attached document or a link to a malicious website in the body of an email message. 
 
-Impersonation: An attack involving replacement of something benign with something malicious— for example, spoofing, man in the middle attacks, rogue wireless access points, and SQL injection attacks all involve impersonation.  
+* Impersonation: An attack involving replacement of something benign with something malicious— for example, spoofing, man in the middle attacks, rogue wireless access points, and SQL injection attacks all involve impersonation.  
 
-Improper Usage: Any incident resulting from violation of an organization’s acceptable usage policies by an authorized user, excluding the above categories; for example, a user installs file-sharing software, leading to the loss of sensitive data; or a user performs illegal activities on a system.  
+* Improper Usage: Any incident resulting from violation of an organization’s acceptable usage policies by an authorized user, excluding the above categories; for example, a user installs file-sharing software, leading to the loss of sensitive data; or a user performs illegal activities on a system.  
 
-Loss or Theft of Equipment: The loss or theft of a computing device or media used by the organization, such as a laptop, smartphone, or authentication token. 
+* Loss or Theft of Equipment: The loss or theft of a computing device or media used by the organization, such as a laptop, smartphone, or authentication token. 
 
-1.2	Signs of an Incident 
+#### 1.2	Signs of an Incident 
 
 For many organizations, detection is the most challenging aspect of assessing potential incidents. This difficulty is mainly due to a combination of three factors: 
-
-    Incidents can be detected through a variety of means, including manual (user-reported) and automatic (IDPSs). The level of detail varies between detection methods. 
-
-    Typical reports of potential incidents are quite high. 
-
-    Deep and specialized technical knowledge and extensive experience are necessary for proper and efficient analysis of incident data. 
+* Incidents can be detected through a variety of means, including manual (user-reported) and automatic (IDPSs). The level of detail varies between detection methods. 
+* Typical reports of potential incidents are quite high. 
+* Deep and specialized technical knowledge and extensive experience are necessary for proper and efficient analysis of incident data. 
 
 There are two categories of incident signals: precursors and indicators. Precursors are signs that an incident may be pending, while indicators are signs that an incident may have already occurred.  
 
@@ -116,55 +113,45 @@ Precursors are a rare luxury, and often there will not be any identifiable precu
 
 Indicators are much more common. Some examples include antivirus software alerts, a new file with an unusual name, a buffer overflow alert sensor, or a large number of bounced emails with suspicious contents.  
 
-1.3	Incident Analysis Practices 
+#### 1.3	Incident Analysis Practices 
 
 Performing the initial analysis can be quite difficult. The NIST has created a list of recommendations to make the process easier. These recommended standards include: 
 
-    Profile Networks and Systems. A profile is a measure of the expected activity. This allows changes to be more easily detected. Examples of profiling are file integrity checking and monitoring network bandwidth usage. 
-
-    Log Retention Policy. The length of time to store logs is determined by an organization’s retention policies and the expected volume of data. 
-
-    Event Correlation. Evidence of an incident may be captured in a variety of logs across a variety of services. Correlating events between multiple logs helps validate that an event occurred.  
-
-    Keep All Host Clocks Synchronized. To assist with event correlation, synchronized clocks are invaluable. If logs report the same event at different times, it can be impossible to know whether there is any correlation. If all clocks are kept synchronized, correlation can be considered valid. 
-
-    Run Packet Sniffers to Collect Additional Data. Permission may be necessary for the IR team to collect the data due to privacy concerns.  
+* Profile Networks and Systems. A profile is a measure of the expected activity. This allows changes to be more easily detected. Examples of profiling are file integrity checking and monitoring network bandwidth usage. 
+* Event Correlation. Evidence of an incident may be captured in a variety of logs across a variety of services. Correlating events between multiple logs helps validate that an event occurred.  
+* Keep All Host Clocks Synchronized. To assist with event correlation, synchronized clocks are invaluable. If logs report the same event at different times, it can be * Run Packet Sniffers to Collect Additional Data. Permission may be necessary for the IR team to collect the data due to privacy concerns.  
 
  
 
-Phase 2: Containment, Eradication, and Recovery 
+### Phase 2: Containment, Eradication, and Recovery 
 
-2.1	Containment Strategy 
+#### 2.1	Containment Strategy 
 
 Containment is important for a variety of reasons. It can keep the incident from overwhelming resources, and it can provide time for a remediation strategy. Determining the containment strategy is equally important. Important criteria to consider could be: 
-
-    Potential damage and theft of resources 
-
-    Need to preserve evidence 
-
-    Availability of services 
-
-    Time and resources needed to implement 
-
-    Effectiveness of the strategy (e.g. strategy strength if full containment is not necessary) 
-
-    Duration of solution 
+* Potential damage and theft of resources 
+* Need to preserve evidence 
+* Time and resources needed to implement 
+* Effectiveness of the strategy (e.g. strategy strength if full containment is not necessary) 
+* Duration of solution 
 
 Sandboxing can be a useful tool for containment. By putting the attacking entity into a closely controlled environment, additional information can be gained. The attack should not be allowed to continue in any capacity besides inside the sandbox. This leaves other systems vulnerable. A potential issue regarding containment is the chance that containment may cause additional damage. For example, if an attacking entity is set to periodically check that it can maintain external connections, containment may make the check fail. This could trigger the entity to overwrite or encrypt all data on the host drive. 
 
 2.2	Identifying Attacking Hosts 
 
 While IR teams should generally stay focused on containment, eradication, and recovery, system owners and others may want or need to identify the attacking host or hosts. SP.800-61 describes a few commonly performed activities: 
+* Validating the Attacking Host’s IP Address. 
+** New incident handlers often focus on the attacking host’s IP address. The handler may attempt to validate that the address was not spoofed by verifying connectivity to it; however, this simply indicates that a host at that address does or does not respond to the requests. A failure to respond does not mean the address is not real—for example, a host may be configured to ignore pings and traceroutes. Also, the attacker may have received a dynamic address that has already been reassigned to someone else. 
 
-    Validating the Attacking Host’s IP Address. New incident handlers often focus on the attacking host’s IP address. The handler may attempt to validate that the address was not spoofed by verifying connectivity to it; however, this simply indicates that a host at that address does or does not respond to the requests. A failure to respond does not mean the address is not real—for example, a host may be configured to ignore pings and traceroutes. Also, the attacker may have received a dynamic address that has already been reassigned to someone else. 
+* Researching the Attacking Host through Search Engines. 
+** Performing an Internet search using the apparent source IP address of an attack may lead to more information on the attack—for example, a mailing list message regarding a similar attack.  
 
-    Researching the Attacking Host through Search Engines. Performing an Internet search using the apparent source IP address of an attack may lead to more information on the attack—for example, a mailing list message regarding a similar attack. 
+* Using Incident Databases. 
+** Several groups collect and consolidate incident data from various organizations into incident databases. This information sharing may take place in many forms, such as trackers and real-time blacklists. The organization can also check its own knowledge base or issue tracking system for related activity. 
 
-    Using Incident Databases. Several groups collect and consolidate incident data from various organizations into incident databases. This information sharing may take place in many forms, such as trackers and real-time blacklists. The organization can also check its own knowledge base or issue tracking system for related activity. 
+* Monitoring Possible Attacker Communication Channels. 
+** Incident handlers can monitor communication channels that may be used by an attacking host. For example, many bots use IRC as their primary means of communication. Also, attackers may congregate on certain IRC channels to brag about their compromises and share information. However, incident handlers should treat any such information that they acquire only as a potential lead, not as fact. 
 
-    Monitoring Possible Attacker Communication Channels. Incident handlers can monitor communication channels that may be used by an attacking host. For example, many bots use IRC as their primary means of communication. Also, attackers may congregate on certain IRC channels to brag about their compromises and share information. However, incident handlers should treat any such information that they acquire only as a potential lead, not as fact. 
-
-2.3 	Eradication and Recovery 
+#### 2.3 	Eradication and Recovery 
 
 After an incident has been adequately contained, eradication may be necessary to eliminate components of the incident, such as deleting malware and disabling breached user accounts. In some cases, however, eradication may not be necessary.  
 
