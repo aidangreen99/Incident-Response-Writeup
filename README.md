@@ -1,41 +1,11 @@
 # Incident Response Policy Writeup
 
-Incident Response 
-​Table of Contents 
+This writeup aims to layout an organizational policy, specificly for COB IS to use as needed. Cybersecurity incidents can be panic inducing, but with a proper policy in place to act as an organizational anchor, they can be overcome.
 
  
 
  
 
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
-​
 
 ## Preventative Actions To Be Taken By Users
 
